@@ -22,6 +22,11 @@ p {
 	color: #444;
 }
 
+a {
+    text-decoration: none;
+	color: inherit;
+}
+
 #cv {
 	width: 90%;
 	max-width: 800px;
@@ -98,6 +103,11 @@ p {
 	color: #cf8a05;
 }
 
+.sections {
+	color: #cf8a05;
+	float: right;
+	width: 25%;
+}
 
 section {
 	border-top: 1px solid #dedede;
