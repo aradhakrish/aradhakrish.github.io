@@ -1,7 +1,7 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
 border:0;
-font:inherit;
-font-size:100%;
+font-family:'Tangerine';
+font-size:102%;
 margin:0;
 padding:0;
 vertical-align:baseline;
@@ -11,7 +11,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
 
-html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 14px; color: #222;}
+html, body {background: #181818; font-family: 'Tangerine', arial, sans-serif; font-size: 14px; color: #222;}
 
 .clear {clear: both;}
 
@@ -27,6 +27,15 @@ a {
 	color: inherit;
 }
 
+/*#mainArea a {*/
+/*	color: blue;*/
+/*}*/
+
+#mainArea a    {color:#0D0DAD; background-color:transparent; text-decoration:none}*/
+/*a:visited {color:blue; background-color:transparent; text-decoration:none}*/
+#mainArea a:hover   {color:red; background-color:transparent; text-decoration:underline}
+/*a:active  {color:yellow; background-color:transparent; text-decoration:underline}*/
+
 #cv {
 	width: 90%;
 	max-width: 800px;
@@ -41,16 +50,16 @@ a {
 }
 
 #name h1 {
-	font-size: 1.75em;
-	font-weight: 650;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	margin-bottom: -6px;
+	font-size: 1.5em;
+	font-family: 'Tangerine';
+	color: #281319;
+	margin-top: auto;
 }
 
 #name h2 {
-	font-size: 1.25em;
+	font-size: 1.5em;
 	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-family: 'Tangerine', Arial, sans-serif;
 }
 
 #mainArea {
@@ -80,7 +89,7 @@ a {
 
 #contactDetails ul {
 	list-style-type: none;
-	font-size: 0.9em;
+	font-size: 1em;
 	margin-top: 2px;
 }
 
@@ -133,15 +142,14 @@ section:last-child {
 }
 
 .sectionTitle h1 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-style: italic;
-	font-size: 1.5em;
+	font-family:  'Tangerine', Arial,sans-serif;
+	font-size: 1.1em;
 	color: #cf8a05;
 }
 
 .sectionContent h2 {
-	font-family:  Arial,Helvetica,sans-serif;
-	font-size: 1.25em;
+	font-family:  'Tangerine', Arial,sans-serif;
+	font-size: 1em;
 	margin-bottom: -2px;
 }
 
@@ -362,4 +370,28 @@ section:last-child {
 	-webkit-animation-delay: 0, 2.5s;
 	-moz-animation-delay: 0, 2.5s;
 	animation-delay: 0, 2.5s;
+}
+
+table {
+    font-family: arial, sans-serif;
+	border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+	border: 1px solid black;
+	font-weight: bold;
+	text-align: center;
+    padding: 8px;
+}
+
+td {
+	border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }

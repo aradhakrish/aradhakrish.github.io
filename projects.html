@@ -4,7 +4,7 @@
 <title>Aswathi Radhakrishnan - Curriculum Vitae</title>
 
 <meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta name="description" content="The Curriculum Vitae of Aswathi Radhakrishnan"/>
 <meta charset="UTF-8"> 
 
 <link type="text/css" rel="stylesheet" href="style.css">
@@ -27,14 +27,13 @@
 <![endif]-->
 </head>
 <body id="top">
-<div id="cv" class="instaFade">
+<div id="cv" class="instaFade" style="min-height: 750px; overflow: hidden">
 	<div class="mainDetails">
 		<div id="headshot" class="quickFade">
-			<img src="headshot.jpg" alt="Aswathi Radhakrishnan" />
+			<img src="headshot.jpg" alt="Aswathi Radhakrishnan" href="index.html"/>
 		</div>
-		
 		<div id="name">
-			<h1 class="quickFade delayTwo">Aswathi Radhakrishnan</h1>
+			<h1 class="quickFade delayTwo">ASWATHI RADHAKRISHNAN</h1>
 			<!-- <h2 class="quickFade delayThree">Master of Science, Computer Science</h2> -->
 		</div>
 		
@@ -49,47 +48,65 @@
 		<div class="sections quickFade delayOne">
 			<!-- <h1><a href="https://aradhakrish.github.io/projects">Projects</a></h1> -->
 				<h1>
-					<a href="index.html">HOME</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="index.html">HOME</a> &emsp;|&emsp;
 					<a href="CV.html">CV</a>
 				</h1>
 		</div>
 	</div>
-	
-
-		<div id="mainArea" class="quickFade delayTwo" style="height:1000px;">
+		<div id="mainArea" class="quickFade delayTwo" style="height:auto;">
 			<br/>
 			<div id="accordion">
-  <h3>Robot Motion Planning</h3>
+			<h3 id="dijkstra"><b>Dijkstra's algorithm</b></h3>
 				<div>
 				<section>
-					<p>This is a naive implementation of RT-RRT* (A Real-Time Path Planning Algorithm Based On RRT* by Kourosh Naderi, 
+					<embed src="Dijkstra_README.txt" height="500px" width="650px"><br><br>
+					<a href="https://github.com/aradhakrish/DSATermProject" target="_blank">GitHub Project</a>
+					&nbsp;<img src="opensInNewTab.png" alt="Opens in New Tab" height=12 width=12/>
+				</section>
+				</div>
+			<h3 id="rmp"><b>Robot Motion Planning</b></h3>
+				<div>
+				<section>
+					This is a naive implementation of RT-RRT* (A Real-Time Path Planning Algorithm Based On RRT* by Kourosh Naderi, 
 						Joose Rajamäki and Perttu Hämäläinen)
-					</p>
-					<br>
+					<br><br>
 					Motion Planning in action: 
 					<br>
 					<video width="400" height="300" controls="controls">
 						<source src="RRT.mp4" type="video/mp4">
 					</video> 
 					<br><br>
-					Detailed report can be found here: <a href="MotionPlanningWithDynamicObstacles.pdf"><font color="blue">Motion Planning around Dynamic Obstacles</font></a>
+					Todo: Fix graphical glitches
+					<br><br>
+					Detailed report: <a id="test" style="" href="MotionPlanningWithDynamicObstacles.pdf" target="_blank"><font color="blue">Motion Planning with Dynamic Obstacles</font></a>
+					&nbsp;<img src="opensInNewTab.png" alt="Opens in New Tab" height=12 width=12/>
 				</section>
 				</div>
-  <h3>Intelligent Systems</h3>
+				<h3 id="ocr"><b>Optical Character Recognition</b></h3>
+				<div>
+				<section>
+					<p>
+						<b>Optical	Character	Recognition</b>	(Optical Character Reader)	(OCR)	is	the	method	of	converting	data	
+						contained	in	printed	or	hand-written	documents,	images	and	other	sources	of	information	like	
+						manuscripts	to	its	electronic	form. Julia	is	an	excellent	choice	to	implement	OCR	due	to	its	abilities	like	
+						numerical	accuracy,	distributed	parallel	execution	and	extensive	mathematical	function	library
+					</p>
+					
+					Detailed report here: <a href="OCR_Report.pdf" target="_blank">Optical Character Recognition</a>
+					<br><br>
+						<a href="https://github.com/aradhakrish/SPL-TermProject" target="_blank">GitHub Project</a>
+					&nbsp;<img src="opensInNewTab.png" alt="Opens in New Tab" height=12 width=12/>
+				</section>
+				</div>
+			<h3 id="tictactoe"><b>Tic Tac Toe</b></h3>
 				<div>
 				<section>
 					<p>This is the implementation of an unbeatable Tic-Tac-Toe game using Minimax algorithm</p><br>
+					<a href="TicTacToe.jar">Download Tic-Tac-Toe game</a>
+					<!--Game here: <a href="https://github.com/aradhakrish/TicTacToe/blob/master/TicTacToe.jar" target="_blank">GitHub Project</a>
+					<img src="opensInNewTab.png" height=12 width=12 alt="Open In New Tab"/>-->
 				</section>
 				</div>
-  <h3>Section 3</h3>
-  <div>
-    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-    <ul>
-      <li>List item one</li>
-      <li>List item two</li>
-      <li>List item three</li>
-    </ul>
-  </div>
 </div>
 
 		

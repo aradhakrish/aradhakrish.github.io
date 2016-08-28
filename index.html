@@ -8,6 +8,18 @@
 <meta charset="UTF-8"> 
 
 <link type="text/css" rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./jquery-ui.css">
+	<link rel="stylesheet" href="./style(1).css">
+	<script src="./jquery-1.12.4.js"></script>
+	<script src="./jquery-ui.js"></script>
+  
+   <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
+  </script>
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,36 +27,35 @@
 
 </head>
 <body id="top">
-<div id="cv" class="instaFade">
+<div id="cv" class="instaFade" style="min-height: 750px; overflow: hidden">
 	<div class="mainDetails">
 		<div id="headshot" class="quickFade">
 			<img src="headshot.jpg" alt="Aswathi Radhakrishnan" />
 		</div>
 		
 		<div id="name">
-			<h1 class="quickFade">Aswathi Radhakrishnan</h1>
+			<h1 class="quickFade">ASWATHI RADHAKRISHNAN</h1>
 			<!-- <h2 class="quickFade delayThree">Master of Science, Computer Science</h2> -->
 		</div>
 		
 		<div id="contactDetails" class="quickFade delayTwo">
 			<ul>
-				<li><a  href="mailto:aradhak2@uncc.edu" target="_blank"><img src="mail.png" width="10px" height="10px" bottom="middle" />&nbsp; aradhak2@uncc.edu</a></li>
+				<li><a href="mailto:aradhak2@uncc.edu" target="_blank"><img src="mail.png" width="10px" height="10px" bottom="middle" />&nbsp; aradhak2@uncc.edu</a></li>
 				<li><a href="mailto:aswathi.radhakrish@gmail.com" target="_blank" align="bottom"><img src="mail.png" width="10px" height="10px" bottom="middle" />&nbsp; aswathi.radhakrish@gmail.com</a></li>
-				<!-- <li>m: (704)-593-9235</li> -->
 			</ul>
 		</div>
 		<div class="clear"></div>
 		<div class="sections quickFade delayTwo">
-			<!-- <h1><a href="https://aradhakrish.github.io/projects">Projects</a></h1> -->
-				<h1>
-					<a href="projects.html" class="active">PROJECTS</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="CV.html">CV</a>
-				</h1>
+			<h1>
+				<a href="projects.html" class="active">PROJECTS</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="CV.html">CV</a>
+			</h1>
 		</div>
 	</div>
 	
 	<div id="mainArea" class="quickFade delayOne">
-		<section>
+		
+		<!--<section>
 			<article>
 				<div class="sectionTitle">
 					<h1>Personal Profile</h1>
@@ -55,10 +66,10 @@
 				</div>
 			</article>
 			<div class="clear"></div>
-		</section>
+		</section>-->
 		
 		
-		<section>
+		<!--<section>
 			<div class="sectionTitle">
 				<h1>Work Experience</h1>
 			</div>
@@ -83,10 +94,10 @@
 				</article>
 			</div>
 			<div class="clear"></div>
-		</section>
+		</section>-->
 		
 		
-		<section>
+		<!--<section>
 			<div class="sectionTitle">
 				<h1>Key Skills</h1>
 			</div>
@@ -104,31 +115,114 @@
 				</ul>
 			</div>
 			<div class="clear"></div>
-		</section>
+		</section>-->
 		
 		
 		<section>
 			<div class="sectionTitle">
-				<h1>Education</h1>
+				<h1>EDUCATION</h1>
 			</div>
 			
 			<div class="sectionContent">
 				<article>
-					<h2>College/University</h2>
-					<p class="subDetails">Qualification</p>
-					<p>Master of Science, Computer Science</p>
+					<h2>Master of Science: Computer Science</h2><br>
+					University of North Carolina at Charlotte, NC, USA<br>
+					Expected Graduation: 2016 December<br>
+					CGPA: 4.0 (21 credit hours)
+<!--					<h2>University of North Carolina at Charlotte</h2>
+--><!--					<p class="subDetails">Qualification</p>
+					<p>Master of Science, Computer Science</p>-->
 				</article>
 				
-				<article>
-					<h2>College/University</h2>
-					<p class="subDetails">Qualification</p>
-					<p>Bachelor of Technology, Information Technology</p>
+				<article><br>
+					<h2>Bachelor of Technology: Information Technology</h2><br>
+					Cochin University of Science & Technology, Kerala, India<br>
+					2010 April<br>
+					CGPA: 3.9, First class with Distinction<br><br>
 				</article>
 			</div>
 			<div class="clear"></div>
 		</section>
 		
+		<section>
+			<table>
+				<tr>
+					<th>Course</th>
+					<th>Project</th>
+					<th>Programming Language</th>
+				</tr>
+				<tr>
+					<td>Algorithms & Data Structures</td>
+					<td>
+						<a href="projects.html#dijkstra">Implementation of Lempel-Ziv-Welch Compress/Decompress Algorithm and Dijkstra’s algorithm</a>
+					</td>
+					<td>Java</td>
+				</tr>
+				<tr>
+					<td>Robot Motion Planning</td>
+					<td>
+						<a href="projects.html#rmp">Real-time Motion planning with Dynamic obstacles using RT-RRT*</a>
+						<!--&nbsp;<img src="opensInNewTab.png" alt="Opens in New Tab" height=12 width=12/>-->
+					</td>
+					<td>Python</td>
+				</tr>
+				<tr>
+					<td>Survey of Programming Languages</td>
+					<td>
+						<a href="projects.html#ocr">Optical Character Recognition</a></td>
+					<td>Julia</td>
+				</tr>
+				<tr>
+					<td>Intelligent Systems</td>
+					<td>
+						<a href="projects.html#tictactoe">Tic Tac Toe</a>
+					</td>
+					<td>Java</td>
+				</tr>
+				<tr>
+					<td>Computer Networks</td>
+					<td>
+						Link State Routing Algorithm
+					</td>
+					<td>Java</td>
+				</tr>
+				<tr>
+					<td>Mobile Application Development</td>
+					<td>
+						Pizza Store Application
+					</td>
+					<td>Android</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<hr>
+			<div class="sectionTitle">
+				<h1>WORK EXPERIENCE</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2>Totient Business Solutions Pvt. Ltd.</h2>
+					Bangalore, Karnataka, India<br><br>
+					Test Automation Engineer<br>
+					2011 Oct - 2014 Dec<br>
+<!--					<h2>University of North Carolina at Charlotte</h2>
+--><!--					<p class="subDetails">Qualification</p>
+					<p>Master of Science, Computer Science</p>-->
+				</article>
+				
+				<article><br>
+					<h2>Cognizant Technology Solutions</h2>
+					Coimbatore, Tamil Nadu, India<br><br>
+					Programmer Analyst Trainee<br>
+					2010 Nov - 2011 April<br>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
 	</div>
+				<div class="clear"></div>
 </div>
 </body>
 </html>
