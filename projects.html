@@ -8,9 +8,20 @@
 <meta charset="UTF-8"> 
 
 <link type="text/css" rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="./jquery-ui.css">
+	<link rel="stylesheet" href="./style(1).css">
+	<script src="./jquery-1.12.4.js"></script>
+	<script src="./jquery-ui.js"></script>
+  
+   <script>
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
+  </script>
+   
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -24,10 +35,10 @@
 		
 		<div id="name">
 			<h1 class="quickFade delayTwo">Aswathi Radhakrishnan</h1>
-			<h2 class="quickFade delayThree">Master of Science, Computer Science</h2>
+			<!-- <h2 class="quickFade delayThree">Master of Science, Computer Science</h2> -->
 		</div>
 		
-		<div id="contactDetails" class="quickFade delayFour">
+		<div id="contactDetails" class="quickFade delayOne">
 			<ul>
 				<li>e: <a href="mailto:aradhak2@uncc.edu" target="_blank">aradhak2@uncc.edu</a></li>
 				<li>e: <a href="mailto:aswathi.radhakrish@gmail.com" target="_blank">aswathi.radhakrish@gmail.com</a></li>
@@ -35,18 +46,21 @@
 			</ul>
 		</div>
 		<div class="clear"></div>
-		<div class="quickFade delayFour">
-				<a href="index.html">Home</a>&emsp;&emsp;
-				<a href="CV.html">CV</a>
-		</div>	
+		<div class="sections quickFade delayOne">
+			<!-- <h1><a href="https://aradhakrish.github.io/projects">Projects</a></h1> -->
+				<h1>
+					<a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="CV.html">CV</a>
+				</h1>
+		</div>
 	</div>
 	
-	
-		<div id="mainArea" class="quickFade delayFive" style="height:1000px;">
-			<p>
-				<img src="expand.png" height="10px" width="10px">&nbsp;
-				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#rmp">Robot Motion Planning</button>
-				<div id="rmp" class="collapse">
+
+		<div id="mainArea" class="quickFade delayTwo" style="height:1000px;">
+			<br/>
+			<div id="accordion">
+  <h3>Robot Motion Planning</h3>
+				<div>
 				<section>
 					<p>This is a naive implementation of RT-RRT* (A Real-Time Path Planning Algorithm Based On RRT* by Kourosh Naderi, 
 						Joose Rajamäki and Perttu Hämäläinen)
@@ -61,17 +75,25 @@
 					Detailed report can be found here: <a href="MotionPlanningWithDynamicObstacles.pdf"><font color="blue">Motion Planning around Dynamic Obstacles</font></a>
 				</section>
 				</div>
-				<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#is">Intelligent Systems</button>
-				<div id="is" class="collapse">
+  <h3>Intelligent Systems</h3>
+				<div>
 				<section>
 					<p>This is the implementation of an unbeatable Tic-Tac-Toe game using Minimax algorithm</p><br>
 				</section>
 				</div>
-				<!-- <a href="RobotMotionPlanning.html">Robot Motion Planning</a><br>
-				<a href="IntelligentSystems.html">Intelligent Systems</a> -->
-			</p>
+  <h3>Section 3</h3>
+  <div>
+    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </div>
+</div>
+
 		
 		</div>
-	</div>
+</div>
 </body>
 </html>
